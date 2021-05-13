@@ -4,3 +4,6 @@ div, h1{
 nav, p, button{
   font-family: 'Roboto', sans-serif;
 }
+.main-content__title{
+  font-size: 50px;
+}
