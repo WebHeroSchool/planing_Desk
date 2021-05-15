@@ -1,9 +1,48 @@
+.wrapper{
+  margin: auto;
+  width: 80%;
+  border: dashed 1px red;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .menu{
+  display: inline-block;
+  border: dashed 1px red;
+}
+.logo{
+    padding: 40px 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu__item{
+    padding: 0 13px;
+    border: 1px red;
+}
+.menu__item:last-child{
+    padding-right: 0;
+}
 div, h1{
   font-family: 'PT Serif', serif;
 }
 nav, p, button{
   font-family: 'Roboto', sans-serif;
 }
+.logo{
+  font-size: 24px;
+}
+.menu{
+  font-size: 14px;
+}
 .main-content__title{
   font-size: 50px;
+}
+.main-content__description{
+  font-size: 18px;
+}
+.main-content__button{
+  font-size: 14px;
 }
