@@ -1,4 +1,4 @@
-.wripper{
+.wrapper{
   margin: auto;
   width: 80%;
   border: dashed 1px red;
@@ -43,6 +43,6 @@ nav, p, button{
 .main-content__description{
   font-size: 18px;
 }
-.main-content_button{
+.main-content__button{
   font-size: 14px;
 }
