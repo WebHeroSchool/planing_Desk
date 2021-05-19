@@ -1,7 +1,6 @@
 .wrapper{
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
 }
 .header{
   padding: 40px 0;
@@ -10,16 +9,14 @@
 }
 .logo, .menu{
   display: inline-block;
-  border: dashed 1px red;
 }
 .logo{
     position: relative;
     padding: 40px 0;
     padding-left: 44px;
-    font: bold 24px/31px pt_serif, arial, helvetica, sans-seris;
+    font: 24px/31px pt_serifbold, arial, helvetica, sans-seris;
     width: 190px;
     height: 35px;
-    border: dashed 1px red;
 }
 .logo__circle{
     position: absolute;
@@ -46,7 +43,6 @@
 }
 .menu__item{
     padding: 0 13px;
-    border: 1px red;
 }
 .menu__item:last-child{
     padding-right: 0;
