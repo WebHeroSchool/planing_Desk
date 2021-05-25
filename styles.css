@@ -1,5 +1,5 @@
 body{
-  margin:0;
+margin:0;
 }
 
 .wrapper{
@@ -15,46 +15,46 @@ body{
   display: inline-block;
 }
 .logo{
-  position: relative;
-  padding: 40px 0 ;
-  padding-left: 48px;
-  font: 24px/31px pt_serifbold, arial, helvetica, sans-seris;
-  width: 190px;
-  height: 35px;
+    position: relative;
+    padding: 40px 0 ;
+    padding-left: 48px;
+    font: 24px/31px pt_serifbold, arial, helvetica, sans-seris;
+    width: 190px;
+    height: 35px;
 }
 .logo__circle{
-  position: absolute;
-  left: 0;
-  top:50%;
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 46%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
   }
-.logo__circle_color_blue{
-  left:8px;
-  top: 56%;
-  background: #C8DBFB;
-  opacity: .7;
+  .logo__circle_color_blue{
+    left:12px;
+    top: 53%;
+    background: #C8DBFB;
+    opacity: .7;
   }
-.logo__circle_color_dark-blue{
-  background: #0056EC;
-  opacity: .7;
+  .logo__circle_color_dark-blue{
+    background: #0056EC;
+    opacity: .7;
   }
 .menu{
-  display: flex;
-  align-items: center;
-  padding-left: 915px;
+    display: flex;
+    align-items: center;
+    padding-left: 915px;
 }
 .menu__item{
-  position: relative;
-  margin-right: 26px;
-  font: 18px/21px robotoregular, arial, helvetica, sans-seris;
-  color: #000;
-  text-decoration: none;
+    position: relative;
+    margin-right: 26px;
+    font: 18px/21px robotoregular, arial, helvetica, sans-seris;
+    color: #000;
+    text-decoration: none;
 }
 .menu__item:last-child{
-  margin-right: 0;
+    margin-right: 0;
 }
 .menu__item::after{
   position: absolute;
@@ -65,7 +65,8 @@ body{
   height: 3px;
   background: #0056EC;
   opacity: 0;
-  transition: opacity 0.5s, width: 0.5s; 
+  transition: opacity 0.5s, width: 0.5s;
+  
 }
 .menu__item:hover{
   opacity: 0.5;
@@ -85,30 +86,35 @@ body{
   font:  66px/87px pt_serifbold, arial, helvetica, sans-seris;
 }
 .main__subtitle{
-  margin: 0 85px 60px 0;
+  margin: 0 85px 44px 0;
   font: 22px/26px robotomedium, arial, helvetica, sans-seris;
 }
 .main__button{
-  display: inline-blok;
+  display: inline-block;
   font: 18px/21px robotomedium, arial, helvetica, sans-seris;
   color: #fff;
   background: #0056EC;
-  padding: 21px 31px;
+  padding: 14px 35px 20px 24px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
+  width: 216px;
+  height: 24px;
+  margin-left: 2px;
 }
 .main__button:hover{
   opacity: .5;
 }
 .main__title-text_highlight{
   background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%)
+
 }
+
 .points{
   width: 32px;
   height: 8px;
   margin: 0 auto;
-  margin-top: 87px;
+  margin-top: 67px;
   margin-bottom: 38px;
   background: url(img/points.svg);
 }
