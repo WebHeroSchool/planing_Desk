@@ -1,11 +1,15 @@
+body{
+margin:0;
+}
+
 .wrapper{
   margin: auto;
   width: 80%;
 }
+
 .header{
-  padding: 40px 0;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 130px;
 }
 .logo, .menu{
   display: inline-block;
@@ -13,23 +17,23 @@
 .logo{
     position: relative;
     padding: 40px 0 ;
-    padding-left: 44px;
+    padding-left: 48px;
     font: 24px/31px pt_serifbold, arial, helvetica, sans-seris;
     width: 190px;
     height: 35px;
 }
 .logo__circle{
     position: absolute;
-    left: 0;
-    top:50%;
+    left: 4px;
+    top: 46%;
     transform: translateY(-50%);
     width: 28px;
     height: 28px;
     border-radius: 50%;
   }
   .logo__circle_color_blue{
-    left:8px;
-    top: 56%;
+    left:12px;
+    top: 53%;
     background: #C8DBFB;
     opacity: .7;
   }
@@ -40,11 +44,12 @@
 .menu{
     display: flex;
     align-items: center;
+    padding-left: 915px;
 }
 .menu__item{
     position: relative;
     margin-right: 26px;
-    font: 18px/21px robotomedium, arial, helvetica, sans-seris;
+    font: 18px/21px robotoregular, arial, helvetica, sans-seris;
     color: #000;
     text-decoration: none;
 }
@@ -70,7 +75,47 @@
   opacity: 1;
   width: 100%;
 }
-
-nav, p, button{
-  font-family: 'Roboto', sans-serif;
+.main{
+  padding: 0 63% 200px 0;
+  background: top right no-repeat url(img/imgmain.svg);
+  background-size: 780px 660px;
 }
+.main__title{
+  margin: 0 0 35px 0;
+  padding-top: 70px;
+  font:  66px/87px pt_serifbold, arial, helvetica, sans-seris;
+}
+.main__subtitle{
+  margin: 0 85px 44px 0;
+  font: 22px/26px robotomedium, arial, helvetica, sans-seris;
+}
+.main__button{
+  display: inline-block;
+  font: 18px/21px robotomedium, arial, helvetica, sans-seris;
+  color: #fff;
+  background: #0056EC;
+  padding: 18px 35px 18px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+  width: 216px;
+  height: 24px;
+  margin-left: 2px;
+}
+.main__button:hover{
+  opacity: .5;
+}
+.main__title-text_highlight{
+  background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%)
+
+}
+
+.points{
+  width: 32px;
+  height: 8px;
+  margin: 0 auto;
+  margin-top: 67px;
+  margin-bottom: 38px;
+  background: url(img/points.svg);
+}
+
