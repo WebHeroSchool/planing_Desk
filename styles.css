@@ -85,15 +85,15 @@ body{
   font:  66px/87px pt_serifbold, arial, helvetica, sans-seris;
 }
 .main__subtitle{
-  margin: 0 85px 44px 0;
-  font: 22px/26px robotomedium, arial, helvetica, sans-seris;
+  margin: 0 90px 43px 0;
+  font: 22px/26px robotoregular, arial, helvetica, sans-seris;
 }
 .main__button{
   display: inline-block;
   font: 18px/21px robotomedium, arial, helvetica, sans-seris;
   color: #fff;
   background: #0056EC;
-  padding: 18px 35px 18px 24px;
+  padding: 19px 35px 18px 24px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
@@ -116,7 +116,6 @@ body{
   background: url(img/points.svg);
 }
 
-/* скрываем чекбокс*/ 
 #menu__toggle {
   opacity: 0;
 }
@@ -124,7 +123,6 @@ body{
 
 
 @media (max-width: 1730px){
-
 .wrapper {
   margin: auto;
   width: 80%;
@@ -162,13 +160,13 @@ body{
   padding: 18px 35px 18px 27px;
 }
 .points {
-    margin-top: 75px;
+  margin-top: 75px;
 }
 }
+
 
 
 @media (max-width: 1620px){
-
 .main{
   text-align: left;
   padding: 90px 54% 50px 0;
@@ -190,9 +188,11 @@ body{
   padding: 18px 35px 18px 27px;
 }
 .points {
-    margin-top: 75px;
+  margin-top: 75px;
 }
 }
+
+
 
 @media (max-width: 1540px){
 .header {
@@ -217,6 +217,7 @@ body{
   margin-bottom: 47px;
 }
 }
+
 
 @media (max-width: 1367px){
 .wrapper {
@@ -257,7 +258,7 @@ body{
 .main__subtitle{
   width: 350px;
   margin-right: 178px;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
   font: 18px/21px robotomedium, arial, helvetica, sans-seris;
 }
 .main__button{
@@ -265,7 +266,7 @@ body{
   font: 14px/16px robotomedium, arial, helvetica, sans-seris;
   width: 168px;
   height: 18px;
-  padding: 15px 25px 13px 14px;
+  padding: 13px 25px 13px 14px;
 }
 .points {
   margin-top: 90px;
@@ -300,7 +301,6 @@ body{
   font:  50px/66px pt_serifbold, arial, helvetica, sans-seris;
 }
 .main__subtitle{
-  /*width: 60%;*/
   font: 18px/21px robotomedium, arial, helvetica, sans-seris;
 }
 .main__button{
@@ -350,13 +350,12 @@ body{
   padding: 15px 25px 13px 14px;
 }
 .points {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 }
 
 
 @media (max-width: 1025px){
-
 .wrapper {
   margin: auto;
   width: 91%;
@@ -412,6 +411,7 @@ body{
 }
 }
 
+
 @media (max-width: 1001px){
 .wrapper {
   margin: auto;
@@ -446,7 +446,7 @@ body{
   padding: 15px 25px 13px 14px;
 }
 .points {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 }
 
@@ -461,9 +461,9 @@ body{
   margin-bottom: 45px;
 }
 .menu {
-    margin-top: 31px;
-    margin-right: 1px;
-    padding-left: 14px;
+  margin-top: 31px;
+  margin-right: 1px;
+  padding-left: 14px;
 }
 .main{
   text-align: left;
@@ -490,13 +490,294 @@ body{
   padding: 15px 25px 13px 14px;
 }
 .points {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 }
 
 
-/*адаптив для мобильной версии*/
 @media (max-width: 769px){
+.menu{ 
+  display:none;
+ }
+.name-logo{ 
+  display:none;
+ }
+.points{ 
+  display:none;
+ }
+.menu__item::after{
+  display:none;
+}
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+.header{
+  margin:auto;
+}
+.logo {
+  padding: 26px 0;
+}
+.logo__circle {
+  top: 38px;
+  left: 0.1px;  
+}
+.logo__circle_color_blue {
+  top: 45px;
+  left: 9px;
+}
+.main{
+  text-align: center;
+  padding: 44% 20px 10px;
+  background-size: 380px 339px;
+  background-position: top center;
+}
+.main__title{
+  margin: 150px 0 33px 0;
+  font:  35px/44px pt_serifbold, arial, helvetica, sans-seris;
+}
+.main__subtitle{
+  width: 400px;
+  margin: auto;
+  font: 16px/19px robotomedium, arial, helvetica, sans-seris;
+}
+.main__button{
+  margin-top: 30px;
+  font: 14px/16px robotomedium, arial, helvetica, sans-seris;
+  width: 168px;
+  height: 17px;
+  padding: 14px 25px 13px 16px;
+}
+.points{ 
+  display:none;
+ }
+
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex; 
+  position: fixed;
+  top: 39px;
+  right: 80px;
+  width: 25px;
+  height: 3px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #0056EC;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  margin-top: 42px;
+  padding: 0 0 1px 5px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:last-child {
+  margin: 43px 50px 20px 17px;
+}
+.menu__item:hover {
+  opacity:1;
+  color:#5193F4;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu {
+  visibility: visible;
+  left: 0;
+  padding: 156px 16px 23px 10px;
+}
+}
+
+
+@media (max-width: 530px){
+.menu{ 
+  display:none;
+ }
+.name-logo{ 
+  display:none;
+ }
+.points{ 
+  display:none;
+ }
+.menu__item::after{
+  display:none;
+}
+.wrapper {
+  margin: auto;
+  width: 90%;
+}
+.header{
+  margin:auto;
+}
+.logo {
+  padding: 26px 0;
+}
+.logo__circle {
+  top: 38px;
+  left: 0.1px;  
+}
+.logo__circle_color_blue {
+  top: 45px;
+  left: 9px;
+}
+.main{
+  text-align: center;
+  padding: 44% 20px 10px;
+  background-size: 360px 319px;
+  background-position: top center;
+}
+.main__title{
+  margin: 170px 0 33px 0;
+  font:  32px/41px pt_serifbold, arial, helvetica, sans-seris;
+}
+.main__subtitle{
+  width: 300px;
+  margin: auto;
+  font: 14px/16px robotomedium, arial, helvetica, sans-seris;
+}
+.main__button{
+  margin-top: 30px;
+  font: 14px/16px robotomedium, arial, helvetica, sans-seris;
+  width: 168px;
+  height: 17px;
+  padding: 14px 25px 13px 16px;
+}
+.points{ 
+  display:none;
+ }
+
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  position: fixed;
+  top: 39px;
+  right: 45px;
+  width: 25px;
+  height: 3px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #0056EC;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  margin-top: 42px;
+  padding: 0 0 1px 5px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:last-child {
+  margin: 43px 50px 20px 17px;
+}
+.menu__item:hover {
+  opacity:1;
+  color:#5193F4;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu {
+  visibility: visible;
+  left: 0;
+  padding: 156px 16px 23px 10px;
+}
+}
+
+
+@media (max-width: 375px){
 .menu{ 
   display:none;
  }
@@ -556,10 +837,10 @@ body{
   display:none;
  }
 
+
 #menu__toggle {
   opacity: 0;
 }
-
 .menu__btn {
   display: flex; 
   align-items: center;  
@@ -571,7 +852,6 @@ body{
   cursor: pointer;
   z-index: 1;
 }
-
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -590,7 +870,6 @@ body{
   content: '';
   top: 8px;
 }
-
 .menu {
   display: block;
   position: fixed;
@@ -607,7 +886,6 @@ body{
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
 }
-
 .menu__item {
   display: block;
   margin-top: 42px;
@@ -643,13 +921,6 @@ body{
   padding: 156px 16px 23px 10px;
 }
 }
-
-
-
-
-
-
-
 
 
 
