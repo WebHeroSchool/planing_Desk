@@ -49,7 +49,7 @@ body{
 .menu__item{
   position: relative;
   margin-right: 26px;
-  font: 18px/21px robotoregular, arial, helvetica, sans-seris;
+  font: 18px/21px robotomedium, arial, helvetica, sans-seris;
   color: #000;
   text-decoration: none;
 }
@@ -100,9 +100,15 @@ body{
   width: 216px;
   height: 24px;
   margin-left: 2px;
+  animation: flash 2s infinite ease-in-out;
 }
 .main__button:hover{
   opacity: .5;
+}
+@keyframes flash{
+  50%{
+   background: #00AD9F;
+ }
 }
 .main__title-text_highlight{
   background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%)
@@ -242,7 +248,7 @@ body{
   padding-left: 375px;
 }
 .menu__item {
-  font: 14px/16px robotoregular, arial, helvetica, sans-seris;
+  font: 14px/16px robotomedium, arial, helvetica, sans-seris;
 }
 .main{
   text-align: left;
@@ -287,7 +293,7 @@ body{
   padding-left: 145px;
 }
 .menu__item {
-  font: 14px/16px robotoregular, arial, helvetica, sans-seris;
+  font: 14px/16px robotomedium, arial, helvetica, sans-seris;
 }
 .main{
   text-align: left;
@@ -379,7 +385,7 @@ body{
   margin-right: 3px;
 }
 .menu__item {
-  font: 14px/16px robotoregular, arial, helvetica, sans-seris;
+  font: 14px/16px robotomedium, arial, helvetica, sans-seris;
 }
 .main{
   text-align: left;
